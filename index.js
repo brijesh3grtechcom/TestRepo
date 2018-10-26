@@ -63,8 +63,8 @@ try{
             }
             else if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
                 admobid = { // for iOS
-                    banner: 'ca-app-pub-6929006754332408/4169843751',
-                    interstitial: 'ca-app-pub-6929006754332408/8057117875'
+                    banner: 'ca-app-pub-4537786593759927/8696778404',
+                    interstitial: 'ca-app-pub-4537786593759927/4747044662'
                 };
             }
            // this.prepareAdMobInterstitial(false);
@@ -96,7 +96,7 @@ document.addEventListener('admob.interstitial.events.LOAD', function(event) {
 
 admob.banner.config({
     id: admobid.banner,
-    isTesting: true,
+    isTesting: false,
     autoShow: true,
    bannerAtTop: true
 
@@ -107,7 +107,7 @@ admob.banner.config({
 
   admob.interstitial.config({
     id: admobid.interstitial,
-    isTesting: true,
+    isTesting: false,
     autoShow: true
   })
  // admob.interstitial.prepare();
