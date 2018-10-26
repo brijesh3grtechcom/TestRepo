@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Untitled</title>
+<!--Adobe Edge Runtime-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <script type="text/javascript" charset="utf-8" src="index_edgePreload.js"></script>
+    <style>
+        .edgeLoad-EDGE-2233007131 { visibility:hidden; }
+    </style>
+<!--Adobe Edge Runtime End-->
+
+</head>
+<body style="margin:0;padding:0;height:100%;">
+	<div id="Stage" class="EDGE-2233007131">
+	</div>
+    <script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+<script type="text/javascript">
+        app.initialize();
+	////////////////////////////////////////////////////////
+// ad colony implementation
+//alert('ad colony');
+
+var adcolony_appId;
+var interstitialAdZoneId;
+var rewardedVideoAdZoneId;
+//android
+if (navigator.userAgent.match(/Android/i)) {//alert(navigator.userAgent.match(/Android/i));
+	
+  // working id
+adsId = { 
+    adcolony_appId : "app5897b3b5a1774b349f",
+	interstitialAdZoneId : "vzb511270b2f8640e29f",
+	rewardedVideoAdZoneId : "vzb511270b2f8640e29f"
+	};
+/*trial	
+	adcolony_appId : "appac261d5336d744f4ac";
+	interstitialAdZoneId : "vzd855d463434d479086";
+	rewardedVideoAdZoneId : "vz58f9aa9efa6843118e";
+*/	
+}
+//ios
+else if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+	//alert(navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i));
+adsId = { 
+	adcolony_appId : "app5897b3b5a1774b349f",
+	interstitialAdZoneId : "vz06e8c32a037749699e7050",
+	rewardedVideoAdZoneId : "vz06e8c32a037749699e7050"
+	};
+}
+//////////////////////////////////////////////////////////
+
+// vungle implementation
+
+     
+var vungle_appId = "58f05759ae5daade25000013";
+
+//////////////////////////////////////all in one
+
+var ban_ad="";
+var inte_ad="";
+
+try{
+
+    function prepareInterstitial() {try{
+        var autoshow = 'true';
+//alert(" Adcol3  -- " + admobid.interstitial); 
+        admob.interstitial.prepare();
+
+  //      AdMob.prepareInterstitial({adId:admobid.interstitial, autoShow:autoshow});
+              //alert(" Adcol 4 -- "); 
+  
+        }catch(e){}
+    }
+    
+var intad = "admob";
+
+function alternet_Interstitial(){
+//alert(" Inti add  -- " + intad); 
+//intad = "admob";
+
+
+if(intad=="admob")
+    { 
+//alert(" Adcol1  -- "); 
+prepareInterstitial();
+    intad = "adcol";
+    try {
+    clearInterval(myVar);
+    }
+    catch(e){}
+
+    }
+else if(intad=="adcol")
+
+
+     {
+try{    
+     
+     {
+    	//window.adcolony.loadedInterstitialAd();    
+        if(window.adcolony.loadedInterstitialAd())
+          {
+		//alert(" Adcol2  -- "); 
+
+           window.adcolony.showInterstitialAd();
+           intad = "vungle";
+          }    
+        else
+         {
+         //prepareInterstitial();
+         //intad = "false";    
+         //alert(" Vungle  -- " + window.vungle.loadedRewardedVideoAd());
+         if(window.vungle.loadedRewardedVideoAd())
+           {
+            window.vungle.showRewardedVideoAd();
+            intad = "admob";
+           }
+         else
+           {
+		prepareInterstitial();           					//interstitial.showAd(onSuccess,onError);
+           intad = "vungle";
+           }      
+        }    
+}
+	}catch(e){ prepareInterstitial(); intad = "admob";}
+    }
+        
+    else // show vungle 
+    {    
+    try{        
+       //alert(" Vungle 1111  -- " + window.vungle.loadedRewardedVideoAd());
+       if(window.vungle.loadedRewardedVideoAd())   
+         {
+//alert(" Vungle 1111  -- ")
+         window.vungle.showRewardedVideoAd();
+         intad = "adcol";
+         }    
+       else
+          { 
+          //alert(" Adcol 11111  -- " + 						      window.adcolony.loadedInterstitialAd());
+           if(window.adcolony.loadedInterstitialAd())
+            {    
+            window.adcolony.showInterstitialAd();
+            intad = "admob";       
+            }
+           else
+            {
+            prepareInterstitial();    
+            intad = "vungle";
+            }      
+         }   
+     }catch(e){alert("E -- "+e);prepareInterstitial();  intad = "admob";}    
+    }
+ }
+{
+	setInterval(function(){alert("Interv"); alternet_Interstitial();},180000); 
+}
+
+}catch(ed){
+
+	setInterval(function(){alert("catchInt"); alternet_Interstitial();},180000);
+try{
+myVar = setInterval(function(){alternet_Interstitial();},10000);
+}
+catch (e) {}
+}
+
+	 </script>
+
+</body>
+</html>
