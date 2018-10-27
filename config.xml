@@ -42,5 +42,4 @@ Ice Princess Pizza Truck </description>
         <variable name="ADMOB_APP_ID" value="ca-app-pub-4537786593759927~1584575140" />
     </plugin>
     <preference name="Orientation" value="landscape" />
-    <plugin name="cordova-plugin-crypt-file" spec="^1.3.3" />
     </widget>
