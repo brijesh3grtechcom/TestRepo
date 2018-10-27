@@ -41,6 +41,5 @@ Ice Princess Pizza Truck </description>
     <preference name="Orientation" value="landscape" />
 	 <gap:config-file platform="android" parent="/manifest" mode="delete">
 		<uses-permission android:name="android.permission.RECORD_VIDEO" />
- 		<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 	</gap:config-file> 
     </widget>
