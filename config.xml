@@ -39,8 +39,11 @@ Ice Princess Pizza Truck </description>
         <variable name="ADMOB_APP_ID" value="ca-app-pub-4537786593759927~1584575140" />
     </plugin>
 	
-	
+<edit-config file="AndroidManifest.xml" target="/manifest/uses-permission[@android:name='android.permission.RECORD_AUDIO']" mode="merge">
 
+       <uses-permission android:name="android.permission.INTERNET" />
+
+</edit-config>
  
     <preference name="Orientation" value="landscape" />
 
