@@ -38,16 +38,12 @@ Ice Princess Pizza Truck </description>
     <plugin name="cordova-plugin-admob-free" spec="^0.21.0">
         <variable name="ADMOB_APP_ID" value="ca-app-pub-4537786593759927~1584575140" />
     </plugin>
-	<config-file platform="android" parent="/manifest/uses-permission[@android:name='android.permission.RECORD_AUDIO']" mode="merge">
-
+	<edit-config file="AndroidManifest.xml" target="/manifest/uses-permission[@android:name='android.permission.RECORD_AUDIO']" mode="merge">
        <uses-permission android:name="android.permission.INTERNET" />
-
-</config-file>
-<config-file platform="android" parent="/manifest/uses-permission[@android:name='android.permission.READ_PHONE_STATE']" mode="merge">
-
+</edit-config>
+<edit-config file="AndroidManifest.xml" target="/manifest/uses-permission[@android:name='android.permission.READ_PHONE_STATE']" mode="merge">
        <uses-permission android:name="android.permission.INTERNET" />
-
-</config-file>
+</edit-config>
        
     <preference name="Orientation" value="landscape" />
 
