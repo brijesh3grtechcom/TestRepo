@@ -1,39 +1,40 @@
 function data_set_object(key,value)
 /* function for strong json object */
-{
+{ // Comment here
 	value = JSON.stringify(value);
+	// Comment here
 try
 {
 	 localStorage.setItem(key, value);
 }
 catch (e)
-{
+{// Comment here
 }
-	try/*for nokia s60*/
-	{
-		 widget.setPreferenceForKey(value, key);
-	}
-	catch (ex)
-	{
-		//alert("data_set widget.setPreferenceForKey");
-	}
+	
 		try/*for nokia s40*/
-		{
+		{// Comment here
 			widget.preferences.setItem(key,value);
 		}
 		catch (ez)
-		{
+		{// Comment here
 		}
 			try/*cookies*/
 				{
 					setCookie(key,value,"2000");
-					
+				// Comment here	
 				}
 				catch (ey)
 				{
 				}
 	
-
+try/*for nokia s60*/
+	{// Comment here
+		 widget.setPreferenceForKey(value, key);
+	}// Comment here
+	catch (ex)
+	{// Comment here
+		//alert("data_set widget.setPreferenceForKey");
+	}
 
 
 }
@@ -43,9 +44,7 @@ function data_get_object_or_string(key,defaultVal)
 /*function for retriving json object*/
 {
 	try
-	{
-		
-		var result = JSON.parse(localStorage.getItem(key));
+	{var result = JSON.parse(localStorage.getItem(key));
 		//alert("get data from local storage"+result);
 		if (result == null || result=="" || result == undefined || result == "null")
 	{
@@ -71,14 +70,12 @@ function data_get_object_or_string(key,defaultVal)
 	else{
 		return result;
 	}
-			
-		}
+	  }
 		catch (ex)
 		{
 		}
 			try /*for nokia s40*/
 			{
-				
 			var result = eval('('+widget.preferences.getItem(key)+ ')');
 			//alert("get data from widget s40 storage"+result);
 			if (result == null || result=="" || result === undefined || result == "null")
@@ -111,7 +108,7 @@ function data_get_object_or_string(key,defaultVal)
 	
 
 }
-
+// Comment heresdsdds
 function data_set_string(key, value)
 /* function for storing string data*/
 {
@@ -147,12 +144,11 @@ function data_set_string(key, value)
 				}
 	
 }
-
+// Comment here
 function data_get_string(key,defaultVal)
- 
- //functino for retriving string data
+  //functino for retriving string data
 {
-	
+	// Comment here
 	try
 	{
 		var result  = localStorage.getItem(key);
@@ -164,8 +160,8 @@ function data_get_string(key,defaultVal)
 	else{
 		
 		return result;
-	}
-	}
+	}// Comment here
+	}// Comment here
 	catch (e)
 	{}
 		try//for nokia s60
@@ -193,13 +189,13 @@ function data_get_string(key,defaultVal)
 	{
 		return defaultVal;
 	}
-	else{
+	else{// Comment here
 		return result;
 	}
 			}
 		catch (ez)
 			{
-			
+			// Comment here
 			}
 				try/*cookies*/
 				{
@@ -208,7 +204,7 @@ function data_get_string(key,defaultVal)
 	{
 		return defaultVal;
 	}
-	else{
+	else{// Comment here
 		return result;
 	}
 				}
@@ -216,5 +212,5 @@ function data_get_string(key,defaultVal)
 				{
 				}
 	
-
+// Comment here
 }
