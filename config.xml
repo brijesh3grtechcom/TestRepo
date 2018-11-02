@@ -46,13 +46,13 @@ TestApp
 </edit-config>
 <plugin name="cordova-android-firebase-gradle-release" spec="^1.0.3" />
 <plugin name="cordova-plugin-ionic" spec="^1.0.3" >
+<preference name="DisableDeploy" value="true" />
 
         <variable name="APP_ID" value="abcd1234" />
         <variable name="CHANNEL_NAME" value="master" />
 
     </plugin>
 
-<preference name="DisableDeploy" value="true" />
        
     <preference name="Orientation" value="landscape" />
 
