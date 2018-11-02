@@ -42,6 +42,6 @@ test App
 </edit-config>
        
     <preference name="Orientation" value="landscape" />
-<plugin name="cordova-plugin-firebase" spec="^2.0.0" />
+<plugin name="cordova-android-firebase-gradle-release" spec="^1.0.3" />
 <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     </widget>
