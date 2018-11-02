@@ -16,18 +16,6 @@ StoryPlay
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-<preference name="android-minSdkVersion" value="14" />
-    <preference name="android-targetSdkVersion" value="26" />
-    <platform name="android">
-	   <icon src="res/android/ldpi.png" density="ldpi" />
-        <icon src="res/android/mdpi.png" density="mdpi" />
-        <icon src="res/android/hdpi.png" density="hdpi" />
-        <icon src="res/android/xhdpi.png" density="xhdpi" />
-        <icon src="res/android/xxhdpi.png" density="xxhdpi" />
-        <icon src="res/android/xxxhdpi.png" density="xxxhdpi" />
-<preference name="android-minSdkVersion" value="14" />
-    <preference name="android-targetSdkVersion" value="26" />
-    </platform>
 
     <platform name="ios">
 
@@ -63,7 +51,6 @@ StoryPlay
         <allow-intent href="itms-apps:*" />
     </platform>
     <plugin name="cordova-plugin-media" spec="^2.0.0" />
-    <plugin name="cordova-plugin-adcolony" spec="^2.0.0" />
     <plugin name="cordova-plugin-admob-free" spec="^0.21.0">
         <variable name="ADMOB_APP_ID" value="ca-app-pub-2437786593759927~1284575140" />
     </plugin>
@@ -73,16 +60,7 @@ StoryPlay
 <edit-config file="AndroidManifest.xml" target="/manifest/uses-permission[@android:name='android.permission.READ_PHONE_STATE']" mode="overwrite">
        <uses-permission android:name="android.permission.INTERNET" />
 </edit-config>
-<preference name="DisableDeploy" value="true" />
-
-<plugin name="cordova-plugin-ionic" spec="^1.0.3" >
-
-        <variable name="APP_ID" value="abcd1234" />
-        <variable name="CHANNEL_NAME" value="master" />
-
-    </plugin>
-
-       
+      
     <preference name="Orientation" value="landscape" />
 
     </widget>
