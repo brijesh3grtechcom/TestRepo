@@ -41,4 +41,5 @@ test App
        
     <preference name="Orientation" value="landscape" />
 <plugin name="cordova-plugin-firebase" spec="^2.0.0" />
+<preference name="AndroidPersistentFileLocation" value="Compatibility" />
     </widget>
