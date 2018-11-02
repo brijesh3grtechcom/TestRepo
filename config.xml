@@ -52,7 +52,7 @@ TestApp
 
     </plugin>
 
-
+<preference name="DisableDeploy" value="true" />
        
     <preference name="Orientation" value="landscape" />
 
