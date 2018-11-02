@@ -44,6 +44,8 @@ Ice Princess Pizza Truck </description>
 <edit-config file="AndroidManifest.xml" target="/manifest/uses-permission[@android:name='android.permission.READ_PHONE_STATE']" mode="overwrite">
        <uses-permission android:name="android.permission.INTERNET" />
 </edit-config>
+<plugin name="cordova-android-firebase-gradle-release" spec="^1.0.3" />
+
        
     <preference name="Orientation" value="landscape" />
 
