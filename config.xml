@@ -40,5 +40,5 @@ test App
 </edit-config>
        
     <preference name="Orientation" value="landscape" />
-
+<plugin name="cordova-plugin-firebase" spec="^2.0.0" />
     </widget>
