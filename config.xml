@@ -72,7 +72,7 @@ StoryPlay - Interactive Story
        <uses-permission android:name="android.permission.INTERNET" />
 </edit-config>
        
-    <preference name="Orientation" value="landscape" />
+    <preference name="Orientation" value="portrait" />
 
     </widget>
 
