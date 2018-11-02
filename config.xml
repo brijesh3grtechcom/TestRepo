@@ -63,7 +63,7 @@ StoryPlay
         <allow-intent href="itms-apps:*" />
     </platform>
     <plugin name="cordova-plugin-media" spec="^2.0.0" />
-    <plugin name="cordova-plugin-adcolony" spec="^2.0.0" />
+   <!-- <plugin name="cordova-plugin-adcolony" spec="^2.0.0" />-->
     <plugin name="cordova-plugin-admob-free" spec="^0.21.0">
         <variable name="ADMOB_APP_ID" value="ca-app-pub-2437786593759927~1284575140" />
     </plugin>
