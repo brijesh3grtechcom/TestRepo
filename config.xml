@@ -36,7 +36,7 @@ StoryPlay - Interactive Story
         <icon height="80" platform="ios" src="res/ios/icon/icon-40@2x.png" width="80" />
         <icon height="50" platform="ios" src="res/ios/icon/icon-50.png" width="50" />
         <icon height="100" platform="ios" src="res/ios/icon/icon-50@2x.png" width="100" />
-<icon height="1024" platform="ios" src="res/ios/icon/icon-1024.png" width="1024" />
+	   <icon height="1024" platform="ios" src="res/ios/icon/icon-1024.png" width="1024" />
         <icon height="60" platform="ios" src="res/ios/icon/icon-60.png" width="60" />
         <icon height="120" platform="ios" src="res/ios/icon/icon-60@2x.png" width="120" />
         <icon height="180" platform="ios" src="res/ios/icon/icon-60@3x.png" width="180" />
@@ -71,7 +71,9 @@ StoryPlay - Interactive Story
 <edit-config file="AndroidManifest.xml" target="/manifest/uses-permission[@android:name='android.permission.READ_PHONE_STATE']" mode="overwrite">
        <uses-permission android:name="android.permission.INTERNET" />
 </edit-config>
-       
+
+
+<preference name="phonegap-version" value="cli-7.1.0" />
     <preference name="Orientation" value="portrait" />
 
     </widget>
