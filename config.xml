@@ -74,7 +74,7 @@ Ice Princess Wardrobe
 
 
 <preference name="phonegap-version" value="cli-7.1.0" />
-    <preference name="Orientation" value="portrait" />
+    <preference name="Orientation" value="landscape" />
 
     </widget>
 
