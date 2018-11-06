@@ -98,7 +98,8 @@ admob.banner.config({
     id: admobid.banner,
     isTesting: false,
     autoShow: true,
-   bannerAtTop: true
+   bannerAtTop: true,
+	overlap:true
 
   })
 //alert ("int2");
