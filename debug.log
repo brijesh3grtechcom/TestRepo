@@ -1,0 +1,8 @@
+[1103/160945:INFO:CONSOLE(1469)] "Uncaught Error: Module cordova-plugin-device.device does not exist.", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/Brij/Desktop/Goldi_color/StoryPlay/cordova.js (1469)
+[1103/160948:INFO:CONSOLE(0)] "Uncaught TypeError: Object #<Object> has no method 'sendMessage'", source: about:blank (0)
+[1103/160948:INFO:CONSOLE(0)] "Uncaught TypeError: Object #<Object> has no method 'sendMessage'", source: about:blank (0)
+[1103/160949:INFO:CONSOLE(0)] "Uncaught TypeError: Object #<Object> has no method 'sendMessage'", source: about:blank (0)
+[1103/161002:INFO:CONSOLE(1223)] "deviceready has not fired after 5 seconds.", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/Brij/Desktop/Goldi_color/StoryPlay/cordova.js (1223)
+[1103/161002:INFO:CONSOLE(1216)] "Channel not fired: onPluginsReady", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/Brij/Desktop/Goldi_color/StoryPlay/cordova.js (1216)
+[1103/161002:INFO:CONSOLE(1216)] "Channel not fired: onCordovaReady", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/Brij/Desktop/Goldi_color/StoryPlay/cordova.js (1216)
+[1103/162419:ERROR:ipc_channel_win.cc(401)] pipe error: 232
