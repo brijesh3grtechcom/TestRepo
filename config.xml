@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.T3T.IPWardrobe" versionCode = "10" version="1.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:android = "http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.T3T.IPWardrobe" versionCode = "10" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:android = "http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>IcePrincessWardrobe</name>
     <description>
 Ice Princess Wardrobe</description>
@@ -63,7 +63,7 @@ Ice Princess Wardrobe
     <plugin name="cordova-plugin-media" spec="^2.0.0" />
     <!--<plugin name="cordova-plugin-adcolony" spec="^2.0.0" />-->
     <plugin name="cordova-plugin-admob-free" spec="^0.21.0">
-        <variable name="ADMOB_APP_ID" value="ca-app-pub-4537786593759927~1584575140" />
+        <variable name="ADMOB_APP_ID" value="ca-app-pub-5310972137369476~5716740310" />
     </plugin>
 	<edit-config file="AndroidManifest.xml" target="/manifest/uses-permission[@android:name='android.permission.RECORD_AUDIO']" mode="overwrite">
        <uses-permission android:name="android.permission.INTERNET" />
