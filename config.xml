@@ -63,7 +63,6 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <plugin name="cordova-plugin-media" spec="^2.0.0" />
-    <plugin name="cordova-plugin-adcolony" spec="^2.0.0" />
     <plugin name="cordova-plugin-admob-free" spec="^0.21.0">
 <!--  Trial - "ca-app-pub-3940256099942544~3347511713 
 	 iOS 3G - "ca-app-pub-53brokennnnnnnnn109721373brokennnnnnnn69476~5716brokennnnnnnn740310" 
