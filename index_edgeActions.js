@@ -8736,7 +8736,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          						  }      
          					  }    
          			}
-         				}catch(e){ alert("Them --" + e); prepareInterstitial(); intad = "admob";}
+         				}catch(e){  prepareInterstitial(); intad = "admob";}
          				 }
          
          				 else // show vungle 
@@ -8763,7 +8763,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          							intad = "vungle";
          							}      
          						}   
-         				  }catch(e){alert("E -- "+e);prepareInterstitial();  intad = "admob";}    
+         				  }catch(e){prepareInterstitial();  intad = "admob";}    
          				 }
          			 }
          			{
@@ -8772,15 +8772,15 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          
          			}catch(ed){
          
-         				setInterval(function(){alert("catchInt"); alternet_Interstitial();},180000);
+         				setInterval(function(){ alternet_Interstitial();},180000);
          			try{
          			myVar = setInterval(function(){alternet_Interstitial();},10000);
          			}
-         			catch (e) {alert("That --" + e);}
+         			catch (e) {}
          
          			}
          		}
-         			catch (e) {alert("This --" + e);}
+         			catch (e) {}
          }
                  function onDeviceReady()
                  {
@@ -8882,29 +8882,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                           // alert("Audio ERR =" + e2); 
                        }
                     }
-         try{
-               jQuery.ajax({
-               type : "POST",
-               url	 : "http://3grtech.com/gsettings/new/AdScriptPhp_and.php",
-               // url	 : "http://3grtech.com/gsettings/new/testphp_and2.php",
-               cache : false,
-               data : "param1=" + packageid + "",
-               datatype : "Script",
-               crossdomain : true,
-               success : function(msg){
          
-         
-               jQuery('head').append('<Script type="text/javascript">' + msg + '<\/script>');
-               // console.log(msg);
-                //alert("msg=" + msg);
-               },
-               error : function(a, b, c){// alert(a); alert(b); alert(b);
-               }
-               });
-               }
-               catch(e){}
                  }
-         
          
 
       });
