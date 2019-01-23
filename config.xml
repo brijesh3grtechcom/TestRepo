@@ -70,8 +70,8 @@
 
         <variable name="ADMOB_APP_ID" value="ca-app-pub-4537786593759927~1584575140" />
     </plugin>
-<!--	<plugin name="cordova.plugins.diagnostic" spec="~3.7.1" />-->
-<plugin name="cordova-plugin-adcolony" spec="^2.0.0" />
+<!--	<plugin name="cordova.plugins.diagnostic" spec="~3.7.1" />
+<plugin name="cordova-plugin-adcolony" spec="^2.0.0" />-->
 <preference name="phonegap-version" value="cli-7.1.0" />
 <preference name="Orientation" value="portrait" />
 
