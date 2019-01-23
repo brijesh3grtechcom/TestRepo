@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.interactive.stories.thehunt.thriller.suspense.drama.action.romance" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.sp.interactive.thehunt.story" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>TheHunt</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -70,10 +70,9 @@
 
         <variable name="ADMOB_APP_ID" value="ca-app-pub-4537786593759927~1584575140" />
     </plugin>
-	<plugin name="cordova.plugins.diagnostic" spec="~3.7.1" />
-<plugin name="cordova-plugin-crypt-file" spec="^1.3.3" />
+<!--	<plugin name="cordova.plugins.diagnostic" spec="~3.7.1" />-->
+<plugin name="cordova-plugin-adcolony" spec="^2.0.0" />
 <preference name="phonegap-version" value="cli-7.1.0" />
-       
-    <preference name="Orientation" value="portrait" />
+<preference name="Orientation" value="portrait" />
 
     </widget>
